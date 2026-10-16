@@ -48,13 +48,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
             <a href="#" className="flex-shrink-0">
-              <Image
+              <img
                 src="/ayse-nur-sahin-matematik/logo.jpg"
                 alt="Matematik Öğretmeni Ayşe Nur Şahin"
-                width={260}
-                height={80}
                 className="h-16 lg:h-20 w-auto object-contain"
-                priority
               />
             </a>
 
