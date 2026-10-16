@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+const repoName = "ayse-nur-sahin-matematik";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/ayse-nur-sahin-matematik" : "",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true,
   },
