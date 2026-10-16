@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #121C3B;
+  --color-brand-pink: #E11D74;
+  --color-brand-orange: #FF7A00;
+  --color-brand-green: #22C55E;
+  --color-brand-green-dark: #16A34A;
+  --color-brand-dark: #110E27;
+
+  --color-pastel-purple: #F3EEFF;
+  --color-pastel-blue: #EBF5FF;
+  --color-pastel-green: #EAF8F0;
+  --color-pastel-yellow: #FFF8E7;
+  --color-pastel-red: #FFEFEF;
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #121C3B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Kıvılcım wiggle animasyonu */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-10deg) scale(1); }
+  50% { transform: rotate(10deg) scale(1.1); }
+}
+
+/* Yüzdürme efekti */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse soft */
+@keyframes pulseSoft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 3s ease-in-out infinite;
+}
+
+/* Gradient metin */
+.gradient-text {
+  background: linear-gradient(135deg, #6366F1, #A855F7, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar gizleme */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
