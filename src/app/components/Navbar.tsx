@@ -49,7 +49,7 @@ export default function Navbar() {
             {/* Logo */}
             <a href="#" className="flex-shrink-0">
               <Image
-                src="/logo.jpg"
+                src="/ayse-nur-sahin-matematik/logo.jpg"
                 alt="Matematik Öğretmeni Ayşe Nur Şahin"
                 width={260}
                 height={80}
